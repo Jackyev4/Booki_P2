@@ -1,0 +1,7 @@
+{
+    "files.exclude": {
+        "index.html.html": true
+    },
+    "workspace.isHidden": true,
+    "liveServer.settings.multiRootWorkspaceName": "P2"
+}
