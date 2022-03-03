@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
 
+:root{
+--blue:#0065fc;
+--darkgrey:#d9d9d9;
+--lightgrey: #f2f2f2;
+--lightblue: #deebff;
+--lighterblue: #f3f8ff;
+
+
+
+}
 
 * {
   box-sizing: border-box;
@@ -19,7 +29,7 @@ nav {
 
 nav a {
     padding: 2rem;
-    border: 1px solid red;
+   
 }
 
 
@@ -59,5 +69,133 @@ padding: 0 2rem;
 }
 .sub-nav a:hover {
     border-bottom: 3px solid var(--blue);
-    border-top-color: transparent;
+    border-top: 3px solid transparent;
+    color: var(--blue)
+}
+/* BODY */
+.wrapper {
+    padding: 0 2rem;
+}
+
+.wrapper h1,
+.wrapper p {
+    margin-bottom: 1rem;
+}
+
+/* SEARCH-FORM*/
+.search-form {
+    display:flex;
+    align-items: center;
+    font-size: 1.2rem;
+}
+.search-form > * {
+    padding: 1rem 1.5rem;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+
+.search-form input::placeholder {
+    padding: 1rem 1.5rem;
+}
+
+.search-form i {
+    background-color: lightgrey ;
+    border-radius: 1rem 0 0 1rem;
+
+}
+
+.search-form input {
+    flex-basis: 16rem;
+    border: 1px solid lightgrey
+    overflow: auto;
+}
+
+
+.search-form button {
+    background-color:#0065fc;
+    color: white;
+    font-weight: bold;
+    border-radius:0 1rem 1rem 0 ;
+    border : none;
+    cursor: pointer;
+    opacity: 0.9;
+    transition: transform 200ms;
+}
+
+.search-form button:hover{
+    opacity: 1;
+    transform: scale(1.03)
+}
+
+@media (max-width: 800px) {
+ .search-form .search-text {
+     display: none;
+ }
+   
+ .fas.fa-search{
+     display: inline;
+     background-color:  inherit;
+ }
+
+
+/*FILTERS*/
+.filter-list{
+    display:flex;
+    align-items: center;
+    gap: 1rem 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.filter-list h1 {
+    margin-bottom: 0;
+}
+
+.filter {
+    border: 2px solid var(--lightgrey);
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    transition: all 100ms;
+}
+.filter .fas{
+color:blue;
+background-color: var(--lightblue);
+border-radius: 50%;
+margin: -2px;
+width: 3rem;
+height: 3rem;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+.filter span {
+  font-weight: bold; 
+  padding: 0 1rem; 
+}
+
+.filter:hover {
+background-color: var(--lightblue);
+transform: scale(1.02);
+
+}
+
+/* RESULTS MESSAGE */
+.result.message {
+display: flex;
+align-items: center;
+gap: 1rem;
+}
+
+.results.message .fas {
+   color: var(--blue);
+   width: 2rem;
+   height: 2rem;
+   border: 1px solid var(--darkgrey);
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
