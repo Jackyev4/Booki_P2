@@ -94,9 +94,10 @@
         font-size: 19.2px;
     }
 
-    .search-form > * {
-        padding: 16px 24px;
+    .search-form * {
+        padding: 16px px;
         font-size: 19.2px;
+        font-weight: bold;
     }
 
     .search-form i {
@@ -110,19 +111,15 @@
         border: 1px solid var(--lightgrey)
     }
 
-    .search-form input ::placeholder {
-        /*font-weight: bold; */
-        font-size: 19.2px;
-    }
-
     .search-form button {
         background-color: var(--blue);
         color: white;
-        font-weight: bold;
+        font-weight:bold;
         border-radius: 0 16px 16px 0;
         border: none;
         cursor: pointer;
         opacity: 0.9;
+        padding: 16px 24px;
         transition: transform 200ms;
     }
 
@@ -382,7 +379,7 @@
         background-size: cover;
         display: flex;
         background-position: center;
-        border-radius: 1rem;
+        border-radius: 16px;
         box-shadow: rgba(0. 0. 0. 0, 24) 0px 3px 8px;
         transition: all 200ms;
     }
@@ -425,16 +422,16 @@
         margin-top: auto;
         margin-bottom: 0;
         width: 100%;
-        padding: 1rem;
+        padding: 16px;
     }
 
     @media (max-width: 1500px) {
         .activities-list {
-            grid-template-rows: repeat(auto-fit, 15rem);
+            grid-template-rows: repeat(auto-fit, 240px);
         }
 
 
-        .activities-list>* {
+        .activities-list >* {
             grid-column: span 1;
             grid-row: span 1;
             height: 15px;
@@ -447,7 +444,7 @@
         display: flex;
         justify-content: space-evenly;
         font-size: smaller;
-        padding: 1rem;
+        padding: 16px;
     }
 
     @media screen and (max-width: 767px) {
@@ -466,4 +463,5 @@
         .sub-nav a :hover {
             border-bottom: 3px solid var(--blue);
             border-top: 0;
-        }  
+        }
+    }
