@@ -14,6 +14,9 @@
     * {
         box-sizing: border-box;
         font-family: "Raleway", "sans-serif";
+        margin: 0;
+        padding: 0;
+
     }
 
     a {
@@ -23,148 +26,115 @@
 
     /* NAVBAR */
 
+
     nav {
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        flex-wrap: wrap;
+
     }
 
     nav a {
-        padding: 2rem;
+        padding: 32px;
         border-top: 3px solid transparent;
 
     }
 
-    nav a:hover {
-        border-top-color: var (--blue);
+    .logo-container {
+        display: flex;
+        justify-content: center;
     }
 
     #logo {
         margin-right: auto;
-        padding: 0 2rem;
-    }
-
-    .signup {
-        font-weight: bold;
-        color: var(--blue)
+        padding: 0 32px;
     }
 
     .sub-nav {
         display: flex;
+        width: 100%;
+        justify-content: end;
 
+
+    }
+
+    .sub-nav a {
+        text-align: center;
     }
 
 
     .sub-nav a:hover {
         color: var(--blue);
+        border-top: 3px solid var(--blue);
+
     }
 
-    .sub-nav {
-        display: flex;
-    }
-
-    .sub-nav a:hover {
-        color: var (--blue);
-    }
-
-    @media (max-width: 1200px) {
-        .sub-nav {
-            order: 1;
-            flex-basis: 100%;
-            text-align: center;
-
-        }
-
-        .sub-nav a {
-            flex-basis: 50%;
-            text-align: center;
-            border-bottom: 3px solid var (--lightgrey);
-        }
-    }
-
-    .sub-nav a:hover {
-        border-bottom: 3px solid var(--blue);
-        border-top: 3px solid transparent;
-        color: var(--blue)
-    }
-
-    /* WILDCARD */
-    * {
-        box-sizing: border-box;
-        font-family: "Raleway", "sans-serif";
-    }
 
     main {
         margin: 0 auto;
         max-width: 1440px;
-        padding: 0 2rem;
+        padding: 0 2px;
     }
 
-    a {
-        color: inherit;
-        text-decoration: none;
-    }
 
     /* BODY */
     .wrapper {
-        padding: 0 2rem;
+        padding: 0 32px;
     }
 
     .wrapper h1,
     .wrapper p {
-        margin-bottom: 1rem;
+    margin-bottom: 16px;
     }
 
     /* SEARCH-FORM*/
     .search-form {
         display: flex;
         align-items: center;
-        font-size: 1.2rem;
+        font-size: 19.2px;
     }
 
-    .search-form * {
-        padding: 1rem 1.5rem;
-        font-size: 1.2rem;
+    .search-form > * {
+        padding: 16px 24px;
+        font-size: 19.2px;
     }
 
     .search-form i {
-        padding: 1rem 1.2rem;
-        background-color: var (--lightgrey);
-        border-radius: 1rem 0 0 1rem;
+     padding: 16px 19.2px;
+     background-color: var(--lightgrey);
+     border-radius: 16px 0 0 16px;
     }
 
     .search-form input {
-        flex-basis: 16rem;
-        border: 1px solid lightgrey;
-        overflow: auto;
+        flex-basis: 96px;
+        border: 1px solid var(--lightgrey)
     }
 
+    .search-form input ::placeholder {
+        /*font-weight: bold; */
+        font-size: 19.2px;
+    }
 
     .search-form button {
-        background-color: var(--blue)
+        background-color: var(--blue);
         color: white;
         font-weight: bold;
-        border-radius:0 1rem 1rem 0;
+        border-radius: 0 16px 16px 0;
         border: none;
-        cursor:pointer;
+        cursor: pointer;
         opacity: 0.9;
         transition: transform 200ms;
     }
 
     .search-form button:hover {
         opacity: 1;
-        transform: scale(1.03)
+        transform: scale(1.03);
     }
 
     .fas.fa-search {
         display: none;
     }
 
-    @media (max-width: 800px) {
-        .search-form .search-text {
-            display: none;
-        }
 
         .fas.fa-search {
             display: inline;
@@ -173,64 +143,62 @@
 
 
         /*FILTERS*/
+
         .filter-list {
             display: flex;
             align-items: center;
-            gap: 1rem 2rem;
+            gap: 32px;
             flex-wrap: wrap;
-            margin-bottom: 1rem;
+            margin-bottom: 1px;
         }
 
         .filter {
             border: 2px solid var(--lightgrey);
-            border-radius: 2rem;
+            border-radius: 32px;
             display: flex;
             align-items: center;
-            transition: all 100ms;
         }
-
-        .filter-list h1 {
-            margin-bottom: 0;
-        }
-
 
 
         .filter .fas {
-            color: blue;
+            color: #0065fc;
             background-color: var(--lightblue);
             border-radius: 50%;
             margin: -2px;
-            width: 3rem;
-            height: 3rem;
+            width: 48px;
+            height: 48px;
             display: flex;
             align-items: center;
             justify-content: center;
-
         }
 
 
         .filter span {
             font-weight: bold;
-            padding: 0 1rem;
+            padding: 0 16px;
+            display: flex;
         }
 
         .filter:hover {
             background-color: var(--lightblue);
             transform: scale(1.02);
+            display: flex;
 
         }
+
+
 
         /* RESULTS MESSAGE */
         .results-message {
             display: flex;
             align-items: center;
-            gap: 1rem;
+            gap: 1px;
         }
 
         .results-message .fas {
             color: var(--blue);
-            width: 2rem;
-            height: 2rem;
+            width: 2px;
+            height: 2px;
             border: 1px solid var(--darkgrey);
             border-radius: 50%;
             display: flex;
@@ -238,19 +206,18 @@
             justify-content: center;
 
         }
-    }
 
     /* APARTMENTS-LIST */
     .apartments-list {
         display: flex;
-        gap: 1rem;
+        gap: 1px;
     }
 
     .apartments-list>div {
         border: 1px solid red;
         background-color: var(--lightgrey);
-        padding: 1rem;
-        border-radius: 1rem;
+        padding: 1px;
+        border-radius: 1px;
     }
 
     .apartments-list .city {
@@ -279,28 +246,28 @@
     .city-apartments-list {
         display: flex;
         flex-wrap: wrap;
-        gap: 1rem;
+        gap: 1px;
         justify-content: space-around;
-        margin-bottom: 1rem;
+        margin-bottom: 1px;
     }
 
     .city-apartments-list div {
         border: 1px solid blue;
-        flex-basis: calc(33%-1rem);
+        flex-basis: calc(33%-1px);
     }
 
     /* POPULAR */
     .apartments-list .popular-flex {
         display: flex;
         flex-direction: column;
-        gap: 1rem;
+        gap: 1px;
         flex-wrap: wrap;
         flex-basis: 100%;
         justify-content: space-evenly;
     }
 
     .apartments-list .popular div {
-        border: 1px solid blue
+        border: 1px solid blue;
     }
 
     .apartments-list h3 {
@@ -319,13 +286,13 @@
 
     .apartment-card {
         background-color: white;
-        border-radius: 1rem;
-        padding: 0.5rem;
+        border-radius: 1px;
+        padding: 0.5px;
         box-shadow: 0 0 16px #0000002e;
         flex-grow: 1;
         transition: all 0.2s;
         flex-basis: 30%;
-        min-width: 15rem;
+        min-width: 15px;
     }
 
     .apartment-card:hover {
@@ -336,8 +303,8 @@
     /*APARTMENT-IMAGE*/
 
     .apartment-card img {
-        border-radius: 1rem 1rem 0 0;
-        height: 10rem;
+        border-radius: 1px 1px 0 0;
+        height: 10px;
         width: 100%;
         object-fit: cover;
         object-position: top;
@@ -346,7 +313,7 @@
     .apartment-card p,
     .apartment-card h3 .popular-description p,
     .popular-description h3 {
-        margin: 0, 2rem;
+        margin: 0, 2px;
     }
 
     .blue {
@@ -367,9 +334,9 @@
 
     .popular-card.apartment-card img {
         height: auto;
-        border-radius: 1rem 0 0 1rem;
+        border-radius: 1px 0 0 1px;
         width: 40%;
-        margin-right: 0, 5rem;
+        margin-right: 0, 5px;
     }
 
     .popular-description {
@@ -380,8 +347,8 @@
 
     .popular-card {
         display: flex;
-        min-width: 15rem;
-        max-height: 10rem;
+        min-width: 15px;
+        max-height: 10px;
     }
 
     .popular-card .stars {
@@ -395,19 +362,19 @@
 
     .popular h3,
     city h3 {
-        margin-top: 0.5rem;
+        margin-top: 0.5px;
     }
 
     /* Activities */
 
     .activities-list {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax (10rem, 25rem));
+        grid-template-columns: repeat(auto-fit, minmax (10px, 25px));
         grid-template-rows: repeat(5, 1fr);
-        gap: 2rem;
-        margin-top: 2rem;
+        gap: 2px;
+        margin-top: 2px;
         justify-content: center;
-        margin-bottom: 2rem;
+        margin-bottom: 2px;
 
     }
 
@@ -426,35 +393,31 @@
 
     .big1 {
         grid-row: 1 / 4;
-        background-image: ;
+
     }
 
     .big2 {
         grid-column: 3/4;
         grid-row: 1 / -1;
-        background-image: 1_xlarge\kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg;
 
     }
 
     .medium1 {
         grid-row: span 2;
-        background-image: Images\images\activites\3_medium\paul-hermann-QFTrLdQIRhI-unsplash.jpg;
+        background-image: url("./Images/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
     }
 
     .medium2 {
         grid-row: span 2;
-        background-image: Images\images\activites\3_medium\lena-paulin-wH2-EJoDcV0-unsplash.jpg;
     }
 
     .small1 {
         grid-column: 2/3;
         grid-row: 3/-1;
-        background-image: Images\images\activites\4_small\kevin-hikari-rV_Qd1l-VXg-unsplash.jpg;
     }
 
     .small2 {
         grid-column: 2/3;
-        backgroung-image: Images\images\activites\4_small\florian-wehde-xW9e8gdotxI-unsplash.jpg;
     }
 
     .activities-list h3 {
@@ -470,19 +433,37 @@
             grid-template-rows: repeat(auto-fit, 15rem);
         }
 
-            {
-            .activities-list>* {
-                grid-column: span 1;
-                grid-row: span 1;
-                height: 15rem;
-            }
+
+        .activities-list>* {
+            grid-column: span 1;
+            grid-row: span 1;
+            height: 15px;
+        }
+    }
+
+    footer {
+        background-color: var(--lightgrey);
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        font-size: smaller;
+        padding: 1rem;
+    }
+
+    @media screen and (max-width: 767px) {
+        nav {
+            flex-direction: column;
         }
 
-        footer {
-            background-color: var(--lightgrey);
-            width: 100% ;
-            display: flex;
-            justify-content: space-evenly;
-            font-size: smaller;
-            padding: 1rem;
+        .sub-nav {
+            justify-content: space-around;
         }
+
+        .sub-nav a {
+            width: 50%;
+        }
+
+        .sub-nav a :hover {
+            border-bottom: 3px solid var(--blue);
+            border-top: 0;
+        }  
