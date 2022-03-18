@@ -146,7 +146,7 @@
             align-items: center;
             gap: 32px;
             flex-wrap: wrap;
-            margin-bottom: 1px;
+            margin-bottom: 16px;
         }
 
         .filter {
@@ -154,6 +154,7 @@
             border-radius: 32px;
             display: flex;
             align-items: center;
+            transition: all 100ms;
         }
 
 
@@ -189,19 +190,18 @@
         .results-message {
             display: flex;
             align-items: center;
-            gap: 1px;
+            gap: 16px;
         }
 
         .results-message .fas {
             color: var(--blue);
-            width: 2px;
-            height: 2px;
+            width: 32px;
+            height: 32px;
             border: 1px solid var(--darkgrey);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-
         }
 
     /* APARTMENTS-LIST */
@@ -283,13 +283,13 @@
 
     .apartment-card {
         background-color: white;
-        border-radius: 1px;
-        padding: 0.5px;
+        border-radius: 16px;
+        padding: 8px;
         box-shadow: 0 0 16px #0000002e;
         flex-grow: 1;
         transition: all 0.2s;
         flex-basis: 30%;
-        min-width: 15px;
+        min-width: 240px;
     }
 
     .apartment-card:hover {
@@ -300,8 +300,8 @@
     /*APARTMENT-IMAGE*/
 
     .apartment-card img {
-        border-radius: 1px 1px 0 0;
-        height: 10px;
+        border-radius: 16px 16px 0 0;
+        height: 160px;
         width: 100%;
         object-fit: cover;
         object-position: top;
@@ -331,9 +331,10 @@
 
     .popular-card.apartment-card img {
         height: auto;
-        border-radius: 1px 0 0 1px;
+        border-radius: 16px 0 0 16px;
         width: 40%;
-        margin-right: 0, 5px;
+        margin-right: 8px;
+        object-fit: cover;
     }
 
     .popular-description {
