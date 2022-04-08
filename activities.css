@@ -1,86 +1,112 @@
-activities.css
 
 /*ACTIVITIES*/
 
 .activities-list {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr 2fr 1fr;
-    gap:32px;
-    margin-top: 16px;
-    justify-content: center;
-    
+  grid-template-rows: repeat(auto-fit, 240px);
+  font-weight: bold;
 }
 
 .activities-list > * {
-    background-size: cover;
-    background-position: center;
-    border-radius: 16px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    transition: all 200ms;
-}
-
-.activities-list > div:hover {
-    transform: scale(1.02);
-}
-
-
-.big {
-    height:480px;
-}
-
-.big1 {
-   
-    grid-row: 1/-1;
-    
-}
-
-.big2 {
-    grid-column: 3/4;
-    grid-row: 1/ -1;
-}
-
-.medium1 {
-    grid-row:1/ span3;
-}
-
-.medium2 {
-    grid-column: 4/-1;
-    grid-row:3/-1;
-}
-
-.small1 {   
-    grid-column: 2/3;
-    grid-row: 3/4;
-}
-
-.small2 {
-    grid-column: 4/-1;
-    grid-row: 1/3;
+  margin-top: 16px;
+  background-size: cover ;
+  background-position: center; 
 }
 
 .activities-list h3 {
-    background-color: white;
-    max-width: 335px;
-    height:auto;
-    margin-left: auto;
-    margin-right: 0;
-    width: 100%;
-    padding: 16px;
-    border-radius: 0 0 16px 16px;
+  background-color: white;
+  margin-top: 32px;
+  width: 100%;
+  padding: 16px;
+  }
+
+  h3 {
+    margin-top:32px;
+  }
+
+  .activities-list h4 {
+    align-items: left;
+    padding-left:16px;
+    padding-bottom: 10px;
+
+  }
+
+  
+
+  
+  .img-big {
+    width:100%;
+    height:370px;
+    border-radius: 16px 16px 0 0; 
+    margin-bottom: 16px; 
+    
+  }
+
+
+  .port {
+    border-radius: 16px ;
+    box-shadow: 0 0 16px #0000002e;
+  }
+
+  .calanques { 
+    border-radius: 16px;
+    box-shadow: 0 0 16px #0000002e;
+  
+  }
+
+  .img-medium {
+    width:100%;
+    height: 160px;
+    object-fit:cover;
+    border-radius: 16px 16px 0 0;
+    margin-bottom: 16px;
+  }
+
+  .pomegues {
+    border-radius: 16px;
+    box-shadow: 0 0 16px #0000002e;
+    
+    
+  }
+
+  .longchamp {
+    border-radius: 16px;
+    box-shadow: 0 0 16px #0000002e;
+  }
+
+  .img-small {
+    width:100%;
+    height: 120px;
+    object-fit:cover;
+    border-radius: 16px 16px 0 0;
+    margin-bottom: 16px;
+  }
+
+  .frioul {
+    border-radius: 16px;
+    box-shadow: 0 0 16px #0000002e;
+    margin-top: 45px;
+    
+   
+  }
+  
+  .garde {
+    border-radius: 16px;
+    box-shadow: 0 0 16px #0000002e;
+    margin-bottom: 45px;
+  }
+
+  .wrapper-activities { 
+    /* width:1475px; */
+    display: grid;
+    grid-column-gap:20px;
+    grid-template-columns: repeat(4, 1fr);
+    
+    
 }
 
-@media (max-width:1500px) {
-    .activities-list {
-        
-        grid-template-rows: repeat(auto-fit);
-    }
 
-    .activities-list > * {
-        grid-column: span 1;
-        grid-row: span 1;
-        grid-template-rows: unset;
-        height: 240px;
-        width: 80px;
-    }
-}
+
+
+ 
+ 
+

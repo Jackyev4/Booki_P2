@@ -1,7 +1,8 @@
         @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
         @import url("./normalize.css");
         @import url("./activities.css");
-        
+        @import url("./footer.css");
+
 
         :root {
             --blue: #0065fc;
@@ -16,14 +17,16 @@
             box-sizing: border-box;
             font-family: "Raleway", "sans-serif";
             margin: 0;
-            padding: 0;
+
 
         }
 
         a {
             color: inherit;
             text-decoration: none;
+
         }
+
 
         /* NAVBAR */
 
@@ -67,14 +70,35 @@
 
         }
 
+        * {
+            box-sizing: border-box;
+            font-family: "Raleway", "sans-serif";
+
+        }
+
+        .a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .body {
+            margin: 0 auto;
+            max-width: 1440px;
+        }
+
         /* BODY */
         .wrapper {
             padding: 0 32px;
         }
-    
+
         .wrapper h1,
         .wrapper p {
             margin-bottom: 16px;
+        }
+
+        main, header {
+            padding-right: 20px;
+            padding-left: 20px;
         }
 
         /* SEARCH-FORM*/
@@ -82,6 +106,7 @@
             display: flex;
             align-items: center;
             font-size: 19.2px;
+            margin-top: 16px;
         }
 
         .search-form .search-location {
@@ -133,7 +158,7 @@
             align-items: baseline;
             gap: 16px 32px;
             flex-wrap: wrap;
-            margin-bottom: 16px;
+            margin-top: 25px;
         }
 
         .filter-list-container h2 {
@@ -189,6 +214,7 @@
             display: flex;
             align-items: baseline;
             gap: 16px;
+            margin-bottom: 16px;
 
         }
 
@@ -210,7 +236,7 @@
             gap: 16px;
         }
 
-        .apartments-list > div {
+        .apartments-list>div {
             background-color: var(--lightgrey);
             padding: 16px;
             border-radius: 16px;
@@ -218,7 +244,7 @@
 
         .apartments-list .city {
             flex-basis: 66%;
-            
+
         }
 
         .apartments-list .city a {
@@ -226,10 +252,10 @@
         }
 
 
-        .apartments-list .popular {  
+        .apartments-list .popular {
             flex-basis: 30%;
         }
-        
+
 
         /* LISTAPARTMENTS CITY */
 
@@ -238,29 +264,26 @@
             flex-wrap: wrap;
             gap: 16px;
             justify-content: space-around;
-            margin-bottom: 16px;
+            margin-top: 16px;
         }
 
 
         /* POPULAR */
 
         .apartments-list .popular-flex {
-            display:flex;
+            display: flex;
             flex-direction: column;
             gap: 16px;
             flex-wrap: wrap;
             flex-basis: 100%;
             justify-content: space-evenly;
+            margin-top: 16px;
         }
 
-        /* .apartments-list .popular-flex div {
-            border: 1px solid blue;
-        } */
 
-        
 
-        
-       
+
+
 
 
         @media screen and (max-width: 768px) {
@@ -314,7 +337,7 @@
             transition: all 0.2s;
             flex-basis: 30%;
             min-width: 200px;
-            padding:3px;
+            padding: 3px;
         }
 
         .apartment-card img {
@@ -326,8 +349,7 @@
         }
 
         .apartment-card p,
-        .apartment-card h3 
-        .popular-descritpion p,
+        .apartment-card h3 .popular-descritpion p,
         .popular-descritpion h3 {
             margin: 3.2px;
         }
@@ -357,7 +379,7 @@
         .popular-descritpion {
             flex-basis: 100%;
             display: flex;
-            flex-direction:column;
+            flex-direction: column;
         }
 
         /* .popular-description h3 {
@@ -378,13 +400,13 @@
         .popular h3 {
             display: flex;
             justify-content: space-between;
-            
+
         }
 
 
         .popular h3,
         .city h3 {
-            margin-top: 8px;     
+            margin-top: 8px;
         }
 
 
