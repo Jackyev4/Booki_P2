@@ -7,10 +7,13 @@
     <meta name="viewport" content="width=device-width,
       initial-scale=1.0">
     <title>Booki</title>
-    <script src="https://kit.fontawesome.com/91956c75eb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="activities.css">
+    <link rel="stylesheet" href="footer.css">
   </head>
 
   <body>
@@ -19,8 +22,8 @@
       <nav>
         <div class="logo-container"> <img id="logo" src="./Booki.png" alt="Booki Logo"></div>
         <div class="sub-nav">
-          <a href="">Activités</a>
-          <a href="">Hébergement</a>
+          <a href="#activities">Activités</a>
+          <a href="#hebergements">Hébergement</a>
         </div>
       </nav>
     </header>
@@ -33,7 +36,7 @@
       <!-- SEARCH FORM -->
       <form class="search-form" action="#">
         <span class="search-location">
-          <i class="fa-solid fa-location-dot"></i>
+          <i class="fas fa-map-marker-alt"></i>
         </span>
         <input type="text" placeholder="Marseille, France">
         <button>
@@ -79,7 +82,7 @@
       </div>
 
       <!--APARTMENTS LIST-->
-      <section class="apartments-list">
+      <section id="hebergements" class="apartments-list">
 
         <div class="city">
           <h3>Hébergements à Marseille</h3>
@@ -217,7 +220,7 @@
 
       </section>
 
-      <section>
+      <section id="activities">
         <h3>Activités à Marseille</h3>
         <div class="activities-list">
           <div class="wrapper-activities">
@@ -288,4 +291,4 @@
   
   </body>
 
-  </html>
+  </html> 
