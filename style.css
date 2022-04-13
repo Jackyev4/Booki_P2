@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
 @import url("./normalize.css");
 @import url("./activities.css");
-@import url("./footer.css");
+
 
 :root {
   --blue: #0065fc;
@@ -303,14 +303,14 @@ header {
   width: 100%;
 }
 
-.apartment-card p,
-.apartment-card h3 .popular-descritpion p,
-.popular-descritpion h3 {
+.apartment-card p, 
+.popular-description p {
   margin: 3.2px;
 }
 
 .text-blue {
   color: var(--blue);
+
 }
 
 .text-grey {
@@ -331,7 +331,7 @@ header {
   margin-right: 8px;
 }
 
-.popular-descritpion {
+.popular-description {
   flex-basis: 100%;
   display: flex;
   flex-direction: column;
@@ -356,8 +356,19 @@ header {
 .city h3 {
   margin-top: 8px;
 }
+
+.city-apartments-list {
+    flex-direction: column;
+}
  /*ACTIVITIES*/
 
+ .wrapper-activities {
+     display: none;
+     grid-column-gap: 20px;
+     grid-template-columns: repeat(4, 1fr);
+     align-content: center;
+ }
  
+
 
 
