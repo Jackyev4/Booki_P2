@@ -3,12 +3,14 @@
 .activities-list {
   grid-template-rows: repeat(auto-fit, 240px);
   font-weight: bold;
+  
 }
 
 .activities-list > * {
   margin-top: 16px;
   background-size: cover;
   background-position: center;
+  
 }
 
 .activities-list h3 {
@@ -16,6 +18,7 @@
   margin-top: 32px;
   width: 100%;
   padding: 16px;
+  
 }
 
 h3 {
@@ -86,6 +89,30 @@ h3 {
   display: grid;
   grid-column-gap: 20px;
   grid-template-columns: repeat(4, 1fr);
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper-activities {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    
+  }
+
+  .img-big {
+    height: 160px;
+    width: 100%;
+    object-fit: cover;
+    gap:16px;
+  }
+
+  .img-small {
+    height: 160px;
+    width: 100%;
+    object-fit: cover;
+    gap:16px;
+  }
+
+
 }
 
 

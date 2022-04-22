@@ -301,6 +301,7 @@ header {
   border-radius: 16px 16px 0 0;
   height: 160px;
   width: 100%;
+  object-fit: cover;
 }
 
 .apartment-card p, 
@@ -339,7 +340,7 @@ header {
 
 .popular-card {
   display: flex;
-  min-width: 400px;
+  min-width: 332px;
   max-height: 160px;
 }
 
@@ -357,17 +358,22 @@ header {
   margin-top: 8px;
 }
 
-.city-apartments-list {
-    flex-direction: column;
+/*HEBERGEMENTS*/
+.div.city-apartments-list {
+display: flex;
+flex-direction:column;
 }
- /*ACTIVITIES*/
 
- .wrapper-activities {
-     display: none;
-     grid-column-gap: 20px;
-     grid-template-columns: repeat(4, 1fr);
-     align-content: center;
- }
+/* @media screen and (max-width: 375px) {
+  .popular-card {
+    display: flex;
+    min-width: 300px;
+    max-height: 160px;
+}
+
+  } */
+
+
  
 
 
