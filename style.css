@@ -190,8 +190,8 @@ header {
 
 .results-message .fas {
   color: var(--blue);
-  width: 32px;
-  height: 32px;
+  min-width: 32px;
+  min-height: 32px;
   border: 1px solid var(--darkgrey);
   border-radius: 50%;
   display: flex;
@@ -246,40 +246,7 @@ header {
   margin-top: 16px;
 }
 
-@media screen and (max-width: 768px) {
-  nav {
-    flex-direction: column;
-  }
 
-  .sub-nav {
-    justify-content: space-around;
-  }
-
-  .sub-nav a {
-    width: 50%;
-  }
-
-  .sub-nav a:hover {
-    border-bottom: 3px solid var(--blue);
-    border-top: 0;
-  }
-
-  .search-form .search-icon {
-    display: block;
-  }
-
-  .search-form .search-text {
-    display: none;
-  }
-
-  .apartments-list {
-    flex-direction: column;
-  }
-
-  .popular {
-    order: -1;
-  }
-}
 
 .apartments-list .popular-flex {
   flex-direction: row;
@@ -303,8 +270,7 @@ header {
   object-fit: cover;
 }
 
-.apartment-card p, 
-.popular-description p {
+.apartment-card p{
   margin: 3.2px;
 }
 
@@ -324,7 +290,7 @@ header {
   flex-direction: column;
 }
 
-.popular-card.apartment-card img {
+.popular-card img {
   height: auto;
   border-radius: 16px 0 0 16px;
   width: 40%;
@@ -338,9 +304,12 @@ header {
 }
 
 .popular-card {
+  background-color: white;
   display: flex;
   min-width: 332px;
   max-height: 160px;
+  border-radius: 16px;
+  padding:3px;
 }
 
 .popular-card .stars {
@@ -357,18 +326,59 @@ header {
   margin-top: 8px;
 }
 
-/*HEBERGEMENTS*/
-.div.city-apartments-list {
-display: flex;
-flex-direction:column;
+.stars {
+  margin-top: auto;
 }
 
- @media screen and (max-width: 375px) {
-.results-message .fas {
-  width:50px;
-  height: 32px;
+@media screen and (max-width: 1084px) {
+  #hebergements {
+    flex-direction: column-reverse;
+  }
 }
- }
+
+
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+
+  .sub-nav {
+    justify-content: space-around;
+  }
+
+  .sub-nav a {
+    width: 50%;
+  }
+
+  .sub-nav a:hover {
+    border-bottom: 3px solid var(--blue);
+    border-top: 0;
+  }
+
+  .search-form .search-icon {
+    display: block;
+    
+  }
+  .search-form button {
+    padding: 13px 18px;
+  }
+
+  .search-form .search-text {
+    display: none;
+  }
+  
+  .search-form input{
+    padding:11px 0px 12px 6px;
+  }
+
+  .apartments-list {
+    flex-direction: column-reverse;
+  }
+
+}
+
+
+ 
 
 
  
