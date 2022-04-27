@@ -76,13 +76,13 @@ h3 {
 .frioul {
   border-radius: 16px;
   box-shadow: 0 0 16px #0000002e;
-  margin-top: 45px;
+  margin-top: 20px;
 }
 
 .garde {
   border-radius: 16px;
   box-shadow: 0 0 16px #0000002e;
-  margin-bottom: 45px;
+  margin-bottom: 20px;
 }
 
 .wrapper-activities {
@@ -111,8 +111,6 @@ h3 {
     object-fit: cover;
     gap:16px;
   }
-
-
 }
 
 

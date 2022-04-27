@@ -37,12 +37,14 @@ nav {
 #logo {
   margin-right: auto;
   padding: 0 32px;
+  height: 50px;
 }
 
 .sub-nav {
   display: flex;
   width: 100%;
   justify-content: end;
+  flex-direction: row-reverse;
 }
 
 .sub-nav a {
@@ -227,6 +229,7 @@ header {
 /* LISTAPARTMENTS CITY */
 
 .city-apartments-list {
+  background-color: var(--lightgrey);
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
@@ -288,14 +291,17 @@ header {
 .popular {
   display: flex;
   flex-direction: column;
+  
 }
 
 .popular-card img {
-  height: auto;
+  height: 152px;
   border-radius: 16px 0 0 16px;
   width: 40%;
-  flex: 40%;
   margin-right: 8px;
+  min-width:100px;
+  object-fit:cover;
+  
 }
 
 .popular-description {
@@ -306,10 +312,12 @@ header {
 
 .popular-card {
   background-color: white;
+  box-shadow: 0 0 16px #0000002e;
   display: flex;
   max-height: 160px;
   border-radius: 16px;
   padding:3px;
+  width:100%;
 }
 
 .popular-card .stars {
@@ -331,6 +339,7 @@ header {
 }
 
 @media screen and (max-width: 1084px) {
+  
   #hebergements {
     flex-direction: column-reverse;
   }
@@ -338,13 +347,19 @@ header {
 
 
 @media screen and (max-width: 768px) {
+
+  #logo {
+   height: 50px;
+   margin-left: auto;
+  }
   nav {
     flex-direction: column;
   }
 
   .sub-nav {
     justify-content: space-around;
-  }
+    
+    }
 
   .sub-nav a {
     width: 50%;
@@ -370,11 +385,17 @@ header {
   .search-form input{
     padding:11px 0px 12px 6px;
   }
-
-  .apartments-list {
-    flex-direction: column-reverse;
-  }
-
+  
+   .apartments-list > div {
+     border:0%;
+     background-color: white;
+     border-radius:0%;
+   }
+   .apartments-list .popular {
+    background-color: var(--lightgrey)
+    
+    
+   }
 }
 
 
