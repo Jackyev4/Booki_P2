@@ -1,0 +1,134 @@
+/*ACTIVITIES*/
+
+.activities-list {
+  grid-template-rows: repeat(auto-fit, 240px);
+  font-weight: bold;
+  
+}
+
+.activities-list > * {
+  margin-top: 16px;
+  background-size: cover;
+  background-position: center;
+  
+}
+
+.activities-list h3 {
+  background-color: white;
+  margin-top: 32px;
+  width: 100%;
+  padding: 16px;
+  
+}
+
+h3 {
+  font-size: x-large;
+  margin-top: 32px;
+}
+
+.activities-list h4 {
+  padding-left: 16px;
+  padding-bottom: 10px;
+}
+
+.img-big {
+  width: 100%;
+  height: 370px;
+  border-radius: 16px 16px 0 0;
+  margin-bottom: 16px;
+}
+
+.port {
+  border-radius: 16px;
+  box-shadow: 0 0 16px #0000002e;
+  
+}
+
+.calanques {
+  border-radius: 16px;
+  box-shadow: 0 0 16px #0000002e;
+  
+}
+
+.img-medium {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 16px 16px 0 0;
+  margin-bottom: 16px;
+}
+
+.pomegues {
+  border-radius: 16px;
+  box-shadow: 0 0 16px #0000002e;
+  
+}
+
+.longchamp {
+  border-radius: 16px;
+  box-shadow: 0 0 16px #0000002e;
+  margin-top:50px;
+}
+
+.img-small {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 16px 16px 0 0;
+  margin-bottom: 16px;
+}
+
+.frioul {
+  border-radius: 16px;
+  box-shadow: 0 0 16px #0000002e;
+  margin-top: 50px;
+}
+
+.garde {
+  border-radius: 16px;
+  box-shadow: 0 0 16px #0000002e;
+  margin-bottom: 20px;
+}
+
+.wrapper-activities {
+  display: grid;
+  grid-column-gap: 34px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media screen and (max-width: 768px) {
+
+
+
+  .wrapper-activities {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin: 15px;
+    
+  }
+
+  .frioul {
+    margin-top:16px;
+  }
+
+  .longchamp {
+    margin-top:16px;
+
+  }
+
+  .img-big {
+    height: 160px;
+    width: 100%;
+    object-fit: cover;
+    gap:16px;
+  }
+
+  .img-small {
+    height: 160px;
+    width: 100%;
+    object-fit: cover;
+    gap:16px;
+  }
+}
+
+

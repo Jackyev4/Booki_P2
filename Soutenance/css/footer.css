@@ -1,0 +1,34 @@
+/*FOOTER*/
+
+.footer {
+    background-color: var(--lightgrey);
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px;
+    margin-top: 40px;
+}
+
+.footer .footer-section {
+    flex-basis: 33%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.footer .footer-section .footer-title {
+    font-weight: bold;
+    margin-bottom:15px;
+}
+
+.footer .footer-section .footer-link {
+    margin-bottom: 8px;
+}
+
+@media screen and (max-width:768px) {
+    .footer {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+
